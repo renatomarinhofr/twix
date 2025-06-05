@@ -4,8 +4,8 @@ defmodule Twix.Posts.Post do
 
   alias Twix.Users.User
 
-  @cast_fields [:text, :likes] # Fields allowed to be cast from params
-  @required_fields [:text, :user_id] # Fields required for a valid post
+  @cast_fields [:text, :likes]
+  @required_fields [:text, :user_id]
 
   schema "posts" do
     field :text, :string
